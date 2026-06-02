@@ -1,0 +1,1417 @@
+/* 
+rem -> padding , Gap , boarder-radius 
+ 
+
+clamp -> font ,
+
+*/
+
+/* -------------------- MOBILE FIRST APPROCH ----------------*/
+
+
+
+
+
+@font-face {
+    font-family: Reckless;
+    src: url(./RecklessCondensedS-TRIAL-Book.woff);
+}
+
+@font-face {
+    font-family: RobotMono;
+    src: url(./RobotoMono-Medium.ttf);
+}
+
+@font-face {
+    font-family: figtree;
+    src: url(./figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+
+@font-face {
+    font-family: midnight;
+    src: url(./midnight-sans-rd-12-medium-trial.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: #FBF9EB;
+
+
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    padding: 1rem;
+    z-index: 10;
+
+}
+
+nav {
+
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Reckless;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    position: sticky;
+    top: 1rem;
+    left: 0;
+    border: 1px solid black;
+
+
+
+
+
+
+}
+
+nav .nav-part-1 {
+    width: 33%;
+    display: flex;
+    gap: 2rem;
+    font-size: clamp(0.7rem, 2vw, 1.2rem);
+
+
+
+}
+
+h3 {
+    font-weight: 300;
+    display: none;
+
+}
+
+nav .nav-part-2 {
+    width: 33%;
+
+    width: 15vh;
+
+
+
+    height: auto;
+
+
+
+
+
+}
+
+nav i {
+    font-size: 1.8rem;
+
+
+}
+
+.nav-part-2 img {
+
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+nav .nav-part-3 {
+    width: 33%;
+
+    display: flex;
+    gap: 1rem;
+    font-size: clamp(0.3rem, 1vw, 0.7rem);
+
+    align-items: center;
+    justify-content: end;
+    word-spacing: 0.2rem;
+    font-weight: bolder;
+
+
+
+
+
+
+}
+
+
+
+#section-1 {
+    width: 100%;
+    height: 90vh;
+    /* background-image: url(https://www.twoleavestea.com/cdn/shop/files/cere-memorial_matcha_wide.png?v=1779304660&width=720); */
+
+    /* background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=3150.0); */
+
+
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=1125.0);
+
+    background-position: center;
+    background-size: cover;
+
+    z-index: -1;
+    padding: 1.5rem;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+
+
+
+}
+
+/* #section-1 h1{
+    font-size: 5.5rem;
+    font-family: Reckless;
+    max-width: 20vw;
+    font-weight:500 ; 
+
+ }
+ #section-1 p{
+    font-family:figtree;
+    font-size: 1.1rem;
+    max-width: 25vw;
+    font-weight: 300;
+
+ } 
+ strong{
+    font-weight: 600;
+ }
+  */
+#section-1 h1 {
+    /* max-width: 25vw; */
+    /* font-size: 4rem; */
+    font-size: clamp(3.2rem, 4vw, 3.8rem);
+    text-align: center;
+    font-family: Reckless;
+    color: #FBF9EB;
+    font-weight: 500;
+
+}
+
+#section-1 p {
+    /* max-width: 35vw; */
+    font-family: figtree;
+    font-size: clamp();
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+    color: #FBF9EB;
+
+
+}
+
+#section-1 button {
+    width: 100%;
+    padding: 0.8rem 3rem;
+    border-radius: 5rem;
+    background: #2A2857;
+    color: white;
+    font-family: figtree;
+    border: none;
+    font-size: clamp(1.1rem, 1vw, 1.3rem);
+    font-weight: 500;
+
+}
+
+
+#section-2 {
+    width: 100%;
+    height: 120vh;
+    padding: 2rem 1rem;
+
+
+}
+
+#section-2 .section2-text {
+    width: 100%;
+    font-family: Reckless;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2-text h1 {
+    width: 95%;
+    padding: 0 0 2rem 0;
+    font-weight: 300;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 4rem);
+
+}
+
+#section-2 .button-top {
+    font-family: midnight;
+    padding: 0 0.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    background: #DAAEEA;
+    border-radius: 0.5rem;
+    border: 0.01rem solid black;
+    rotate: -3deg;
+
+
+}
+
+
+
+
+
+#section-2 .card-container {
+    padding: 0, 0, 2rem 0;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+
+
+
+}
+
+#section-2 .cards {
+    width: 45vh;
+    display: flex;
+    flex-direction: column;
+
+    flex-shrink: 0;
+
+}
+
+.card-top {
+    width: 90%;
+    height: 50vh;
+    background: #C1EE91;
+    border: 0.01rem solid black;
+    border-radius: 0.5rem;
+    /* position: relative; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    overflow: hidden;
+}
+
+.card-top img {
+
+
+    width: 90%;
+    height: 70%;
+
+    object-fit: cover;
+    object-position: center;
+    /* position: absolute; */
+    transition: all linear 0.1s;
+}
+
+.card-top-txt {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.card-top-txt button {
+    font-family: midnight;
+    padding: 0.3rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    border: 0.01 solid gray;
+
+
+
+
+}
+
+.card-btm-txt {
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background: white;
+
+
+
+}
+
+
+.card-btm {
+    width: 90%;
+
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-btm h1 {
+    font-size: 1.5rem;
+    font-family: Reckless;
+    font-weight: 100;
+
+}
+
+.card-btm h4,
+p {
+    font-family: figtree;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    opacity: 0.7;
+}
+
+
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.bu {
+    width: 100%;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.1rem solid gray;
+
+}
+
+#button-down {
+    width: 70%;
+    padding: 0.8rem 3rem;
+    border-radius: 5rem;
+    background: #2A2857;
+    color: white;
+    font-family: figtree;
+    border: none;
+    font-size: clamp(1.1rem, 1vw, 1.3rem);
+    font-weight: 500;
+    align-items: center;
+    align-self: center;
+
+}
+
+
+#section-3 {
+    width: 95%;
+    /* height: 100vh; */
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-self: center;
+    gap: 2rem;
+
+}
+
+#section-3 .button-bottom {
+    font-family: midnight;
+    padding: 0 0.8rem;
+    font-size: 2.3rem;
+    font-weight: 900;
+    background: #ff8030;
+    border-radius: 0.5rem;
+    border: 0.01rem solid black;
+    rotate: -2deg;
+}
+
+#section-3 h1 {
+    font-family: Reckless;
+    font-weight: 100;
+    font-size: clamp(2rem, 4vw, 4rem);
+
+}
+
+#section-3 #searchInput {
+    width: 100%;
+    height: 11vh;
+    border-radius: 2vh;
+    border: 0.01rem solid black;
+    padding: 0% 1rem;
+    font-size: 1rem;
+    background: #FBF9EB;
+}
+
+#section-3 .searchBu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.searchBu .sectionn2-butt {
+    font-family: Reckless;
+    padding: 0.6rem 1.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    /* opacity: 0.75; */
+    background: #d9e9ff;
+    border-radius: 0.8rem;
+    border: 0.01rem solid black;
+}
+
+
+#section-4 {
+    width: 100%;
+    height: 250vh;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=900);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+}
+
+#section-4 .cupimg {
+    width: 20vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-25%, -50%);
+}
+
+#section-4 h1 {
+    color: white;
+    font-size: 6rem;
+    font-family: midnight;
+    font-weight: 100;
+}
+
+#section-4 p {
+    color: white;
+    font-family: Reckless;
+    font-size: 2rem;
+    font-weight: 100;
+    opacity: 1;
+}
+
+#section-4 .button-mid-top {
+    font-family: midnight;
+    padding: 0.2rem 0.2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    opacity: 1;
+    background: #a2c9fc;
+    border-radius: 0.5rem;
+    border: 0.01rem solid black;
+    rotate: -2deg;
+}
+
+#section-4 .button-mid-btm {
+    font-size: 1.2rem;
+    padding: 0.9rem 0;
+    font-family: figtree;
+    width: 90vw;
+    border-radius: 5vh;
+
+
+}
+
+#section-4 .threeimg {
+    height: 13vh;
+    width: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#section-5 {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem
+}
+
+.section-5-top {
+    width: 80vw;
+    /* height: 20vh; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem
+}
+
+.section-5-top button {
+    width: 10rem;
+    font-family: midnight;
+    padding: 0 0.8rem;
+    font-size: 2.5rem;
+    font-weight: 100;
+    background: #74bd26;
+    border-radius: 0.5rem;
+    border: 0.01rem solid black;
+    rotate: -2deg;
+
+}
+
+.section-5-top h1 {
+    display: none;
+    /* position: absolute; */
+
+    font-family: Reckless;
+    font-weight: 100;
+    font-size: clamp(2rem, 4vw, 4rem);
+}
+
+#section-5 .container {
+    width: 100%;
+    height: 60vh;
+
+    padding: 1rem;
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+
+
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+#section-5 .contCard {
+    width: 41vh;
+    border-radius: 2vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 0.01rem solid black;
+
+
+
+}
+
+.contCard .contCard-top {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.contCard-top h4 {
+    font-size: 1.5rem;
+    font-family: Reckless;
+    font-weight: 100;
+
+}
+
+.contCard .contCard-bottom {
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.01rem solid black;
+    border-radius: 1vh;
+    padding: 0 0.5rem
+        /* background: #000; */
+
+}
+
+.contCard-bottom img {
+    border-right: 0.01rem solid black;
+
+}
+
+.contCard-bottom p {
+    color: white;
+    padding-left: 0.5rem;
+
+
+
+
+}
+
+.contCard-bottom button {
+    width: 40%;
+    height: 60%;
+    border-radius: 5vh;
+    padding: 0
+}
+
+
+#section-6 {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#section-6 .sec {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("https://www.twoleavestea.com/cdn/shop/files/Our_Cafe_Wholesale_Partners.webp?v=1773753185&width=3150.0");
+    background-size: cover;
+
+}
+
+
+#section-6 .content {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2a2857;
+    color: white;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: lighter;
+    font-family: Reckless;
+    text-align: center;
+
+    gap: 2rem;
+    padding: 0 0 0 1.5rem;
+
+
+
+
+
+}
+
+.content button {
+    width: 40vh;
+    height: 8vh;
+    background: white;
+    border-radius: 5vh;
+    font-size: 1rem;
+
+}
+
+#section-7 {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#section-7 h1 {
+    width: 95%;
+    padding: 0 0 2rem 0;
+    font-weight: 300;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 4rem);
+
+}
+
+#section-7 .sec-7-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    overflow-x: auto;
+    /* flex-shrink: 0; */
+
+
+
+}
+
+#section-7 .sec-7-card {
+
+    width: 45vh;
+    height: 100hv;
+    background: #2a2857;
+    border: 0.01rem solid black;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 0rem;
+    overflow: hidden;
+}
+
+.sec-7-container::-webkit-scrollbar {
+    display: none;
+}
+
+.sec-7-card img {
+    width: 100%;
+    gap: 0rem;
+    height: 80%;
+}
+
+.sec-7-card h6 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c0dbff;
+    border-top: 0.01rem solid black;
+    gap: 0rem;
+    font-family: Reckless;
+    font-size: 1rem;
+    border-radius: 0 0 2hv 2hv;
+
+
+
+
+}
+
+#section-7 button {
+    width: 50vh;
+    padding: 0.8rem 3rem;
+    border-radius: 5rem;
+    background: #2A2857;
+    color: white;
+    font-family: figtree;
+    border: none;
+    font-size: clamp(1.1rem, 1vw, 1.3rem);
+    font-weight: 500;
+    align-items: center;
+    align-self: center;
+}
+
+
+#section-8 {
+    width: 100%;
+    height: 120vh;
+    /* background-image: url(https://www.twoleavestea.com/cdn/shop/files/Two_Leaves_Tea_Aug_25_Shoot-14x_SQ_1_d549e6bb-f1ad-4b36-a851-05e1af195a31.webp?v=1771593222&width=1280); */
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.sec-8-img {
+    width: 100%;
+    height: 120vh;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/Two_Leaves_Tea_Aug_25_Shoot-14x_SQ_1_d549e6bb-f1ad-4b36-a851-05e1af195a31.webp?v=1771593222&width=1280);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#section-8 .sec-8-content {
+    /* position: absolute; */
+    background: #f26412;
+    top: 2.1rem;
+    left: 4rem;
+    width: 100%;
+    height: 40%;
+    border: 0.01rem solid black;
+    border-radius: 1vh;
+    padding: 2rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    align-items: center;
+}
+
+.sec-8-content h1 {
+    font-size: 3rem;
+    font-family: Reckless;
+    color: white;
+    font-weight: lighter;
+
+}
+
+.sec-8-content button {
+    width: 50%;
+    height: 7vh;
+    border-radius: 5vh;
+    font-size: 1rem;
+}
+
+
+#section-9 {
+    width: 100%;
+    /* height: 220vh; */
+    background: #c0dbff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-9 .phase-1 {
+    width: 80%;
+    height: 30vh;
+    padding: 1rem;
+
+
+
+}
+.menu2{
+    display:none;
+}
+
+.phase-1 .main-content {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+
+
+}
+
+.phase-1 .content {
+    display: none;
+    visibility: hidden;
+    /* background: #000; */
+}
+
+.phase-1 .input_bottom {
+    display: contents;
+    visibility: visible;
+}
+
+#bu2 {
+    display: none;
+    visibility: hidden;
+
+}
+
+.input_bottom input {
+    width: 80vh;
+    height: 10vh;
+    border-radius: 2vh;
+    padding: 2rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.167);
+}
+
+.phase-1-icons {
+    /* background: green; */
+    height: 30%;
+    width: 100%;
+
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+
+
+#section-9 .phase-2 {
+    width: 90%;
+    /* height: 100vh; */
+    background: #2a2857;
+    border-radius: 2vh;
+    padding: 0 2rem;
+
+
+}
+.menu2{
+    display: none  !important;
+}
+
+
+.footer__menu {
+    border-bottom: 1px solid gray;
+    padding: 1rem 0;
+     
+}
+
+.footer__menu summary {
+
+    list-style: none;
+    color: white;
+    font-family: Reckless;
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+
+
+.footer__menu ul {
+    list-style: none;
+    padding-top: 1rem;
+}
+
+.footer__menu li {
+    color: #9391a1;
+    font-size: 1.2rem;
+    font-family: Reckless;
+
+}
+ 
+
+
+/* ------------------------------------------------------------------- */
+
+
+
+
+#section-9 .phase-3 {
+    width: 100%;
+    height: 90vh;
+    background-image: url(./footerimg.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:500px) {
+    #section-1 h1 {
+
+        text-align: center;
+        width: 100%;
+
+
+
+    }
+
+    #section-1 p {
+        width: 100%;
+
+        text-align: center;
+
+
+
+
+    }
+
+    #section-2 .cards {
+        width: 45vh;
+        flex-shrink: 0;
+
+
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1024px) {
+
+    nav .nav-part-1 {
+        width: 33%;
+        display: flex;
+        gap: 3rem;
+        font-size: clamp(0.7rem, 2vw, 1.2rem);
+
+    }
+
+    nav .nav-part-2 {
+        width: 33%;
+
+        width: 15vh;
+
+
+
+        height: auto;
+
+
+
+
+
+    }
+
+    h3 {
+        font-weight: 300;
+        display: contents;
+    }
+
+    nav i {
+        position: absolute;
+        display: none;
+    }
+
+    #section-1 h1 {
+
+        text-align: start;
+        max-width: 30vw;
+
+
+    }
+
+    #section-1 {
+        background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=3150.0);
+
+    }
+
+    #section-1 p {
+        text-align: start;
+        max-width: 35vw;
+
+
+
+    }
+
+    #section-1 button {
+        width: 25%;
+
+    }
+
+
+    #section-2 {
+        width: 100%;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .section2-text h1 {
+        width: 50%;
+        padding: 5rem 0 5rem 0;
+        /* background: #000; */
+
+
+
+    }
+
+    #section-2 .button-top {
+        font-size: 3rem;
+        padding: 0 2rem;
+    }
+
+
+    #section-2 .cards {
+        width: 45vh;
+        flex-shrink: 0;
+
+    }
+
+    .card-top img {
+        width: 90%;
+
+        transition: transform 0.1s linear;
+    }
+
+    .card-top img:hover {
+        transform: scale(1.05);
+    }
+
+    #button-down {
+        width: 20%;
+    }
+
+
+    #section-3 {
+        width: 70%;
+
+    }
+
+    #section-3 #searchInput {
+
+
+        width: 40%
+    }
+
+    #section-4 .button-mid-btm {
+        width: 15vw;
+
+    }
+
+    .section-5-top {
+        width: 60vw;
+        height: 40vh;
+
+
+    }
+
+    .section-5-top h1 {
+        display: contents;
+
+    }
+
+    #section-6 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #section-6 .sec {
+        width: 50%;
+        height: 100vh;
+
+        background-size: cover;
+
+    }
+
+
+    #section-6 .content {
+        width: 50%;
+        height: 100vh;
+
+        justify-content: center;
+        align-items: start;
+        text-align: start;
+
+
+
+
+
+
+    }
+
+    .content button {
+        width: 30vh;
+        font-size: 1.5rem;
+
+    }
+
+
+
+
+
+
+    #section-8 {
+        width: 100%;
+        height: 120vh;
+        background-image: url(https://www.twoleavestea.com/cdn/shop/files/Two_Leaves_Tea_Aug_25_Shoot-14x_SQ_1_d549e6bb-f1ad-4b36-a851-05e1af195a31.webp?v=1771593222&width=1280);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    #section-8 .sec-8-content {
+        position: absolute;
+        background: #f26412;
+        top: 2.1rem;
+        left: 4rem;
+        width: 30%;
+        height: 85%;
+        border: 0.01rem solid black;
+        border-radius: 1vh;
+        padding: 5rem 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .sec-8-content h1 {
+        font-size: 4rem;
+        font-family: Reckless;
+        color: white;
+        font-weight: lighter;
+
+    }
+
+    .sec-8-content button {
+        width: 50%;
+        height: 10%;
+        border-radius: 5vh;
+        font-size: 1rem;
+    }
+
+
+
+
+
+
+
+    #section-9 {
+        width: 100%;
+        height: 240vh;
+        background: #c0dbff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section-9 .phase-1 {
+        width: 80%;
+        height: 50vh;
+        padding: 1rem;
+        display: flex;
+
+
+
+    }
+
+    .phase-1 .main-content {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+
+        /* background: #000; */
+
+
+    }
+
+    .phase-1 .content {
+        display: contents;
+        visibility: visible;
+    }
+
+    .content h6 {
+        font-size: 2rem;
+        font-family: Reckless;
+
+    }
+
+    .content p {
+        font-size: clamp(1rem, 1vw, 1.3rem);
+    }
+
+    .phase-1 .input_bottom {
+        display: contents;
+        visibility: visible;
+    }
+
+
+    .input_bottom input {
+        width: 50vh;
+        height: 7vh;
+        border-radius: 2vh;
+        padding: 2rem;
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.167);
+    }
+
+    .phase-1-icons {
+        position: static;
+        display: contents;
+        visibility: visible;
+        width: 30%;
+        height: 85%;
+        padding: 0 2rem;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+         
+    }
+
+
+    
+ 
+    .footer__menu {
+
+        display: none !important;
+    } 
+
+     #section-9 .phase-2 {
+        width: 90%;
+        height: 100vh;
+        background: #2a2857;
+        border-radius: 2vh;
+        /* padding: 0 2rem; */
+    }
+
+    .menu2 {
+        width: 100%;
+        height: 100%;
+        display: grid  !important;
+        grid-template-columns:repeat(5,20%);
+        grid-template-rows: 50% 50%;
+        color: white;
+    }
+
+    .box {
+        height: 100%;
+        width: 100%;
+        /* background: #000; */
+       padding:2rem
+    }
+    .box h3{
+    display:block;
+    color:white;
+    font-family:Reckless;
+    font-size:2rem;
+    padding-bottom: 1rem;
+}
+
+.box p{
+    color:#9391a1;
+    font-size:1rem;
+   
+}
+
+
+ 
+
+}
