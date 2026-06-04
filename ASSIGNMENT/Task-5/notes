@@ -1,0 +1,34 @@
+
+.parent{
+    background: lightblue;
+    /* padding: 10px; */
+    display: flex;
+   
+     
+}
+.inner{
+    background: lightgoldenrodyellow;
+    /* padding: 10px; */
+    display: flex;
+    animation-name: anime ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+h4{
+    /* background: lightcoral; */
+    padding: 15px;
+    font-size: 30px;
+}
+@keyframes  anime {
+    from{
+        transform: translate(0%);
+
+    }
+    to{
+        transform: translate(-100%);
+    }
+    
+}
+
