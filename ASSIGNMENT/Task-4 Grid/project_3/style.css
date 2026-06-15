@@ -1,0 +1,273 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    height: 70%;
+    width: 43%;
+    background: black;
+    border-radius: 2rem;
+    box-shadow: 0 0 5rem black;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+
+    grid-template-areas:
+        "box1 box1 box2 box3 box4"
+        "box1 box1 box2 box3 box8"
+        "box5 box6 box7 box7 box8"
+        "box5 box6 box7 box7 box10"
+        "box9 box9 box9 box11 box11";
+
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.box {
+    background:  rgb(50, 50, 50);
+    border-radius: 1rem;
+    border: 0.1rem solid black;
+    box-shadow: 0.05rem 0.05rem  0.2rem rgb(50, 50, 50) ;
+}
+
+.box1 {
+    color: white; grid-area: box1;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: start;
+padding: 1rem; }
+.box1 div{
+    
+     display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+}
+.box1 div p{
+    font-size: 0.6rem;
+    font-weight: 100;
+}
+
+
+.box1 div img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.box1 h1{
+    font-size: 0.7rem;
+}
+.box1 h2{
+    font-size: 0.5rem;
+    color: rgba(255, 255, 255, 0.288);
+}
+.box2 { grid-area: box2;
+background-image: url(./img/mobile.webp);
+background-position: center;
+background-size: cover; }
+.box3 { grid-area: box3; 
+background-image: url(./img/tablet.webp);
+background-position: center;
+background-size: cover;}
+.box4 { grid-area: box4; 
+display: flex;
+flex-wrap: wrap;
+    border: none;
+    background: none;
+    box-shadow: none;
+    justify-content: space-between;
+    align-items: space-between;
+}
+.box4 button{
+    width: 31%;
+    height: 45%;
+    background:  rgb(50, 50, 50);
+    color: white;
+    border-radius: 0.8rem;
+    border: 0.1rem solid black;
+    box-shadow: 0.05rem 0.05rem  0.2rem rgb(50, 50, 50) ;
+
+    
+  
+}
+
+.box5 { grid-area: box5;
+background-image: url(./img/person.webp); 
+background-position: center;
+background-size: cover;}
+
+
+.box6 { grid-area: box6;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: start;
+padding: 0.5rem; 
+}
+.box6 h1{
+    color: white;
+    font-size: 0.8rem;
+}
+.box6 p{
+     color: rgba(255, 255, 255, 0.203);
+    font-size: 0.6rem;
+
+}
+.box6 div button{
+      width: 30%;
+    height: 45%;
+    background:  rgb(28, 28, 28);
+    color: white;
+    border-radius: 0.8rem;
+    border:none;
+    /* box-shadow: 0.05rem 0.05rem  0.2rem rgb(50, 50, 50) ; */
+
+}
+
+
+
+.box7 { grid-area: box7;
+background-image: url(./img/laptop.webp);
+background-position: center;
+background-size: cover;
+ }
+.box8 { grid-area: box8; 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+gap: 1rem;
+padding: 0.5rem;}
+
+.box8 div p{
+    color: rgba(255, 255, 255, 0.205);
+    font-size: 0.8rem;
+}
+.box8 div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.box8 div h1{
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.box8 .blw-arrow{
+    padding: 0 1rem;
+    width:100%;
+    height: 20%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+.blw-arrow p i{
+font-size: 1.5rem;
+border-radius: 50%;
+    color: white;
+border: 0.1rem solid   rgba(255, 255, 255, 0.205); 
+}
+.box9 { grid-area: box9;
+padding: 2rem; }
+.box9 div{
+    height: 100%;
+    width: 70%;
+    
+}
+.box9 div h1{
+    font-size: 1.2rem;
+    color: white;
+}
+.box9 div p{
+    font-size: 0.6rem;
+    color: rgba(240, 248, 255, 0.273);
+}
+.box10 { grid-area: box10;
+display: flex;
+justify-content: center;
+align-items: center; }
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: #464646;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: rgb(35, 34, 34);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+ 
+
+input:checked + .slider::before {
+    transform: translateX(26px);
+}
+.box11 { grid-area: box11; 
+display: flex;
+flex-direction: column;
+align-items: space-between;
+justify-content: space-between;
+gap: 0.5rem;
+padding: 1rem;}
+.box11 div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.box11 h1{
+
+color: white;    font-size: 1.2rem;
+}
+.box11 p{
+
+color: rgba(255, 255, 255, 0.262);    font-size: 0.5rem;
+}
+
+.box11 .blw-arrow{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+
+ 
