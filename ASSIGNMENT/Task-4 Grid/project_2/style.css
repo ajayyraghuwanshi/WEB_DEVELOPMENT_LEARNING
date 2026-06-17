@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+}
+
+main {
+    width: 55vw;
+    height: 70vh;
+    background: white;
+    display: grid;
+    grid-template-columns: 6% 38% 18% 17% 13%;
+    grid-template-rows: 22% 45% 27%;
+    grid-template-areas:
+        "none box2 box3 box3 box3"
+        "box1 box2 box4 box4 box5"
+        "box1 box2 box6 box7 box7";
+    gap: 1rem;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+
+    border-radius: 1rem;
+    box-shadow: 0 0 5rem black;
+
+}
+
+.box {
+    /* background: green; */
+    border-radius: 1rem;
+}
+
+.box1 {
+    grid-area: box1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+
+}
+
+.box1 p {
+    transform: rotate(-90deg)
+}
+
+
+.box2 {
+    grid-area: box2;
+ 
+overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns: 30% 10% 10% 50%;
+    grid-template-rows: 10% 45% 45%;
+
+    grid-template-areas:
+        "About d1  d  d"
+        "circle circle circle circle"
+        "btm-heading btm-heading btm-heading logo";
+
+
+}
+
+
+
+
+.About {
+    grid-area: About;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.div1
+{
+    overflow: hidden;
+    height: 200%;
+    width: 100%;
+    grid-area: d1;
+    background: #8a58e9;
+    transform: rotate(45deg);
+
+}
+
+.div
+{
+    height: 100%;
+    width: 100%;
+    grid-area: d;
+    background: #8a58e9;
+    border-top-left-radius:1rem;
+
+
+
+
+}
+.circle {
+    background: #8a58e9;
+
+    grid-area: circle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    border-top-left-radius:1rem;
+}
+
+.outer {
+    width: 60%;
+    height: 100%;
+    border: 0.3rem solid white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner {
+    width: 90%;
+    height: 90%;
+    background: #dd6cc5;
+    border-radius: 100%;
+    position: relative;
+
+
+}
+
+.inner img {
+    width: 120%;
+    position: absolute;
+    top: -40%;
+    left: -10%;
+    border-radius: 50%;
+}
+
+
+.btm-heading {
+    background: #8a58e9;
+
+    color: white;
+    padding: 0 0 0 1rem;
+    grid-area: btm-heading;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 2rem;
+        background: #8a58e9;
+
+}
+
+.logo img {
+    border-radius: 100%;
+
+}
+
+ 
+
+.box3 {
+    grid-area: box3;
+}
+
+.box3 h1 {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5rem;
+}
+
+.box4 {
+
+    background-image: url(./img/picock.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+    overflow: hidden;
+}
+
+.box5 .top {
+    height: 50%;
+    background: #7ebac4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.box5 .bottom {
+    height: 50%;
+    background: #a880f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+
+
+
+.section5 h1 {
+    font-weight: 800;
+    font-size: 2rem;
+
+}
+
+.box6 {
+    grid-area: box6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: gray;
+    gap: 0.5rem
+}
+
+.box6 i {
+    font-size: 2rem;
+}
+
+.box7 {
+    grid-area: box7;
+    overflow: hidden;
+    background: #000;
+
+
+
+
+}
+
+.img {
+    padding: 1rem;
+    position: relative;
+}
+
+img {
+
+    width: 5rem;
+    background: green;
+}
+
+.above {
+    position: absolute;
+    width: 51%;
+    height: 105%;
+    border-radius: 1rem;
+    background: rgb(231, 189, 49);
+    top: 0;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
