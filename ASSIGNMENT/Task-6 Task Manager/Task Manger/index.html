@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <nav>
+            <h1> TASK MANAGER </h1>
+            <div class="search-div">
+                <input id="search" type="text" placeholder="Search Task.....">
+                <button class="filter"><i class="ri-filter-fill"></i></button>
+            </div>
+            <div class="button-div">
+                <button class="add-task"><i class="ri-add-box-fill"></i> Add Task</button>
+                <button class="clear-all"><i class="ri-delete-bin-6-line"></i> Clear All</button>
+
+            </div>
+
+        </nav>
+
+        <div class="container-div">
+
+            <div class="process-in">
+
+                <div class="div">
+                    <h1>In Process</h1>
+                </div>
+                <div class="process-in-div">
+
+                
+                 <!-- <div class="ans">
+                    <div class="top">
+                        <h1>Name</h1>
+                        <p>priority</p>
+                    </div>
+                    <p>description</p>
+                    <div class="bottom">
+                        <button class="Done"> <i class="ri-check-double-line"></i>Done</button>
+                        <div class="left">
+                            <button class="Edit"><i class="ri-edit-box-line"></i> Edit</button>
+                            <button class="Delete"><i class="ri-delete-bin-6-line"></i> Delete</button>
+                        </div>
+                    </div>
+                </div> -->
+                 </div>
+
+            </div>
+            <div class="complete">
+                <div class="div">
+                    <h1>Completed</h1>
+                </div>
+                <div class="complete-div">
+
+                    <!-- <div class="ans">
+                        <div class="top">
+                            <h1>Name</h1>
+                            <p>priority</p>
+                        </div>
+                        <p>description</p>
+                        <div class="bottom">
+                            <h1> <i class="ri-check-double-line"></i> Completed</h1>
+                            <div class="left">
+                                <button class="Delete"><i class="ri-delete-bin-6-line"></i> Delete</button>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                </div>
+            </div>
+
+        </div>
+
+<div class="Task-Form">
+    <h1 class="cancle-task">x</h1>
+    <div class="form">
+          
+    <form>
+       <div class="heading">
+          <h1>Create Task</h1>
+       </div>
+        <label>Task Name </label>
+        <input type="text" placeholder="Task Name">
+        <label>Task Description</label>
+        <input type="text" placeholder="Description">
+        <label>Task Category</label>
+        <select>
+            <option value="none" selected>none</option>
+            <option value="immidetly">immidetly</option>
+            <option value="important">important</option>
+            <option value="Delay">Delay</option>
+
+        </select>
+
+        <button class="create">Create</button>
+        
+    </form>
+    </div>
+   
+
+</div>
+    </main>
+    
+ 
+
+    <script src="script.js"></script>
+</body>
+
+</html>

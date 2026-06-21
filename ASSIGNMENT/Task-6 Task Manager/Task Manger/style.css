@@ -1,0 +1,353 @@
+:root{
+    --Dark-color:#000;
+    --light-color:#0c0c0c;
+    --lighter-color:#191919;
+
+  --height: 2.5rem;
+  --padding:1.5rem
+}
+*{
+ margin:0;
+padding:0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width:100%;
+color: white;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+background:var(--Dark-color);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+
+ 
+
+}
+nav{
+    background: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+     border-radius: 0.8rem;
+     height: 30%;
+     box-shadow: 0 0 2rem rgba(1, 210, 251, 0.273);
+     padding: 2rem 0rem;
+}
+nav .search-div {
+    width: 100%;
+   
+      display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+nav .search-div input{
+    height: var(--height);
+    width:50rem;
+    background: var(--lighter-color);
+    padding:var(--padding);
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.084);
+ border: none;
+    
+}
+nav .search-div  button{
+    
+    height: 3.2rem;
+    width: 3.2rem;
+    background: var(--lighter-color);
+color: white;
+ /* padding: 1.5rem; */
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+.filter{
+    position: relative;
+}
+
+nav .button-div{
+    display: flex;
+    gap: 1rem;
+}
+
+nav .button-div button{
+    height: var(--height);
+    width: 10rem;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    background: var(--lighter-color);
+    font-size: 1rem;
+color: white;
+cursor: pointer;
+
+/* display: flex; */
+ 
+
+
+}
+nav .button-div .clear-all{
+    color: rgba(255, 0, 0, 0.605);
+    border:0.1rem solid rgba(255, 0, 0, 0.605);
+}
+
+
+.container-div {
+    display: flex;
+width:100%;
+height:68%;
+gap: 2rem;
+justify-content: center;
+}
+.process-in{
+    border-radius: 0.8rem;
+
+    width: 48%;
+    height: 100%;
+    background: var(--lighter-color);
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    padding:1rem;
+  
+   
+
+ 
+
+}
+.process-in-div{
+     overflow: scroll;
+     display:flex;
+     flex-direction: column;
+     gap:1rem
+
+}
+
+.process-in-div::-webkit-scrollbar{
+     display: none;
+
+}
+.complete{
+    border-radius: 0.8rem;
+
+    width: 48%;
+    height: 100%;
+     background: var(--lighter-color);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding:1rem;
+    gap:0.5rem;
+  
+
+}
+.complete-div{
+    width: 100%;
+       overflow: scroll;
+       display:flex;
+       flex-direction: column;
+       gap:1rem
+
+}
+.complete-div::-webkit-scrollbar{
+     display: none;
+
+}
+
+.div{
+
+    border-radius: 0.8rem;
+padding: 0.5rem 2rem;
+    width: 100%;
+    background: var(--light-color);
+}
+
+.div h1{
+    font-weight: 600;
+}
+
+
+
+.ans{
+    color: white;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border: 0.01px solid rgba(255, 255, 255, 0.274);
+    border-radius: 0.8rem;
+padding: 0.5rem 2rem;
+gap: 0.5rem;
+}
+.top{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top h1{
+    font-size:1.5rem ;
+    font-weight:600 ;
+}
+.top p{
+    color: rgba(255, 0, 0, 0.614);
+    background: var(--light-color);
+    padding:0.5rem 1rem;
+    border-radius: 0.8rem;
+}
+
+.ans p{
+      font-size:0.8rem ;
+    font-weight:100 ;
+}
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top:0.1rem solid rgba(255, 255, 255, 0.171);
+    padding-top: 0.5rem;
+}
+ 
+ .Edit,.Delete{
+        width:6rem;
+
+    height:2rem;
+    border-radius: 0.8rem;
+
+    color: white;
+font-weight:600 ;
+  border: none;
+    border-radius: 0.8rem;
+
+ }
+ .Edit{
+    background: #b8860b;
+ }
+ .Delete{
+    background: #8b0000;
+ }
+.Done{
+    color: white;
+font-weight:600 ;
+font-size: 1rem;
+     width:6rem;
+    height:2rem;
+    background:#8b008b;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.bottom h1{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #2ed56a;
+}
+
+
+.Task-Form{
+    position:absolute;
+    background: #000000e2;
+    width: 97%;
+    height: 90%;
+    display: none;
+    
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background:  var(--lighter-color);
+    width: 30%;
+    height: 70%;
+    border-radius: 0.8rem;
+
+   
+}
+.cancle-task{
+     width: 32%;
+     text-align: end;
+     font-weight: 100;
+     cursor: pointer;
+}
+
+form{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.5rem;
+    padding: 1rem;
+   
+}
+form{
+    color: rgba(255, 255, 255, 0.363);
+}
+form .heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgba(189, 31, 237, 0.43);
+    cursor: pointer;
+}
+
+form input{
+    height: var(--height);
+    width: 100%;
+    border-radius: 0.8rem;
+    padding: 1rem;
+ background: var(--light-color); 
+ border: none;  
+ color: white;
+}
+form select{
+ background: var(--light-color); 
+  height: var(--height);
+    width: 100%;
+    color: rgba(255, 255, 255, 0.363);
+ 
+ border: none;  
+    border-radius: 0.8rem;
+    padding: 0rem 1rem;
+    font-size: 1rem;
+
+}
+ 
+form button{
+    height: var(--height);
+    width: 100%;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: rgba(189, 31, 237, 0.43);
+    border: none;
+    cursor: pointer;
+
+
+}
+
+
+
+
+ 
