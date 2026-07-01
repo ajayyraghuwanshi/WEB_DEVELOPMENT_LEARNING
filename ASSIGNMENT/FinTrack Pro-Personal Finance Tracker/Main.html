@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+
+
+</head>
+
+<body>
+
+    <main>
+        <aside>
+
+            <div>
+                <div class="top-side-nav">
+                    <i class="ri-stack-fill"></i>
+                    <div>
+                        <h1>FinTrack Pro</h1>
+                        <p>Enterprise Finance</p>
+                    </div>
+                </div>
+
+                <div class="aside-content">
+                    <button class="btn" id="Deshboard"><i class="ri-layout-grid-line"></i>Dashboard</button>
+                    <button class="btn" id="Settings"><i class="ri-settings-3-line"></i>Settings</button>
+
+                </div>
+            </div>
+
+
+            <button class="btn" id="AddTrans"><i class="ri-add-large-line"></i> Add Transaction</button>
+        </aside>
+
+
+
+
+
+        <section>
+
+
+            <nav>
+                <h1 class="username-display2"> </h1>
+                <button id="logOut"> > LogOut</button>
+            </nav>
+
+            <div class="heading">
+                <h1>Financial Overview</h1>
+                <p>Real-time tracking application</p>
+            </div>
+
+
+            <div class="containers">
+                <div class="box currentBalance"><i class="ri-bank-line"></i>
+                    <p>Current Balance</p>
+                    <h1 class="CB">$0.00</h1>
+                </div>
+                <div class="box TotalIncome"><i class="ri-arrow-right-up-long-line"></i>
+                    <p>Toatl Income</p>
+                    <h1 class="TI">$0.00</h1>
+                </div>
+                <div class="box TotalExpense"><i class="ri-arrow-right-down-long-fill"></i>
+                    <p>Total Expense</p>
+                    <h1 class="TE">$0.00</h1>
+                </div>
+                <div class="box TotalTrans">
+                    <i class="ri-money-cny-box-line"></i>
+                    <p>Total Transaction</p>
+                    <h1 class="TT">$0.00</h1>
+                </div>
+            </div>
+
+
+
+            <div class="mid-section">
+                <div class="graph-section">
+                    <h1>Cash Flow Analysis</h1>
+
+                    <div class="graph">
+
+                        <div class="graph-num-div">
+
+
+                            <div class="graph-num">
+                                <p>10</p>
+                                <p>8</p>
+                                <p>6</p>
+                                <p>4</p>
+                                <p>2</p>
+                                <p>0</p>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="graph-line">
+                            <div class="line-box"></div>
+                            <div class="line-box"></div>
+                            <div class="line-box"></div>
+                            <div class="line-box"></div>
+                            <div class="line-box"></div>
+                            <div class="line-box"></div>
+                            <div class="h-line  line-box"></div>
+                        </div>
+
+
+                        <div class="curve">
+                            <div class="income-graph graph-curve">.</div>
+                            <div class=" expense-graph graph-curve">.</div>
+                        </div>
+
+
+
+
+                        <div class="graph-detail">
+                            <div class="div">
+                                <p style=" background: #166534;"></p> Income
+                            </div>
+                            <div class="div">
+                                <p style="background: #991b1b ;"></p> Expense
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="preferences-section">
+                    <h1>Preferences</h1>
+                    <div class="slide-btn">
+                        <p>Dark Mode</p>
+                        <div class="slidebar">
+                            <div class="slideball"></div>
+                        </div>
+                    </div>
+
+                    <button id="delall"><i class="ri-delete-bin-6-line"></i> Reset All Data</button>
+
+                </div>
+            </div>
+
+
+            <div class="all-transaction">
+
+                <div class="trans-section">
+                    <h1>All Transactions</h1>
+                    <input type="text" placeholder="Search transaction...." class="search-bar">
+                    <select id="select">
+                        <option value="none" diselect>All Type</option>
+                        <option value="Income">Income</option>
+                        <option value="Expense">Expense</option>
+                    </select>
+                    <div class="tag">
+                        <p>DATE</p>
+                        <p>DESCRIPTION</p>
+                        <p>CATEGORY</p>
+                        <p>AMOUNT</p>
+                        <p>ACTION</p>
+                    </div>
+
+
+
+                    <div class="detail-container">
+
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+
+        <div class="setting">
+            <nav>
+               <h1 class="username-display"> </h1>
+                <button> > LogOut</button>
+            </nav>
+            <div class="heading">
+                <h1>Setting</h1>
+                <p> Manage your account profile and app formatting.</p>
+            </div>
+
+            <div class="mid-section">
+                <div class="Profile">
+
+                    <h1>Profile Details</h1>
+                <form class="setting-form">
+                        <div class="div1">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="">
+                        </div>
+                        <div class="div2">
+                            <label> Primary Currency</label>
+                            <select id="settingCurrency" required="">
+                                <option value="$">USD ($)</option>
+                                <option value="₹">INR (₹)</option>
+                                <!-- <option value="€">EUR (€)</option> -->
+                                <!-- <option value="£">GBP (£)</option> -->
+                                <!-- <option value="¥">JPY (¥)</option> -->
+                            </select>
+
+                        </div>
+
+
+                        <button class="saveChange">Save Changes</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="addTransaction-menu">
+
+            <div class="new-con">
+
+                <div class="top-heading">
+                    <h1 class="head-of-trans">Add Transaction</h1>
+                    <p id="closeX">X</p>
+                </div>
+                <form id="addTransactionForm">
+                    <label>Type</label>
+                    <select>
+                        <option value="Expense">Expense</option>
+                        <option value="Income">Income</option>
+                    </select>
+
+                    <label>Description</label>
+                    <input type="text" placeholder="eg. Amazon, Salary, Coffee" required>
+
+                    <div class="A-D">
+                        <div class="Amount-div">
+                            <label>Amount</label>
+                            <input type="number" required>
+                        </div>
+
+                        <div class="date-div">
+                            <label>Date</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+
+                    <label>Category</label>
+                    <select required>
+                        <option value="" disabled="" selected="">Select a category</option>
+                        <option value="Food & Dining">Food & Dining</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Recharge & Bills">Recharge & Bills</option>
+                        <option value="Petrol & Auto">Petrol & Auto</option>
+                        <option value="Utilities">Utilities</option>
+                        <option value="Salary">Salary</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+
+                    <button id="save-btn">Save Transaction</button>
+
+
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
